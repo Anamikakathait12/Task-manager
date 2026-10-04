@@ -13,6 +13,17 @@ A full stack task manager built with MongoDB, Express, React and Node.js. Users 
 - Input validation on both backend and frontend
 - Responsive, colorful UI with a gradient theme
 
+## Screenshots
+
+### Login
+![Login page](screenshots/login.png)
+
+### Register
+![Register page](screenshots/register.png)
+
+### Task List
+![Task list](screenshots/tasks.png)
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -34,11 +45,12 @@ task-manager/
 │       ├── pages/          Login, Register, Tasks
 │       ├── App.jsx         Routes and PrivateRoute
 │       └── main.jsx        Entry point
-└── server/                 Express backend
-    ├── middleware/auth.js  JWT protect middleware
-    ├── models/             User.js, Task.js
-    ├── routes/             auth.js, tasks.js
-    └── server.js           App entry point
+├── server/                 Express backend
+│   ├── middleware/auth.js  JWT protect middleware
+│   ├── models/             User.js, Task.js
+│   ├── routes/             auth.js, tasks.js
+│   └── server.js           App entry point
+└── screenshots/            Images used in this README
 ```
 
 ## Getting Started
@@ -51,7 +63,7 @@ task-manager/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/Task-manager.git
+git clone https://github.com/Anamikakathait12/Task-manager.git
 cd Task-manager
 ```
 
@@ -94,7 +106,7 @@ Open `http://localhost:5173` in your browser.
 
 | Variable | Where | Description |
 |---|---|---|
-| `PORT` | server | Port the API runs on (default used: 5000) |
+| `PORT` | server | Port the API runs on (5000) |
 | `MONGO_URI` | server | MongoDB Atlas connection string |
 | `JWT_SECRET` | server | Secret used to sign tokens. Keep it private |
 | `CLIENT_URL` | server (optional) | Allowed frontend origin for CORS. Defaults to `http://localhost:5173` |
